@@ -17,11 +17,11 @@ function App({ scale = Array.from({ length: 50 }, () => 0.5 + Math.random() * 4)
 
   return (
     <>
-      <div className=' md:flex md:flex-row md:items-center md:w-11/12 md:mx-auto md:justify-evenly md:h-screen flex flex-col gap-9 overflow-hidden' >
+      <div className=' md:flex md:flex-row md:items-center md:w-11/12 md:mx-auto md:justify-evenly md:h-screen flex flex-col-reverse gap-9 overflow-hidden  ' >
       {/* <StarsCanvas/> */}
-        <div className='flex flex-col gap-12' >
-          <p className='text-white font-orbitron text-4xl font-bold  ' >Welcome to </p>
-          <motion.span 
+        <div className='md:flex md:flex-col md:gap-12 ml-4 flex flex-col gap-8 mb-8 ' >
+          <p className='text-white font-orbitron md:text-4xl text-3xl font-bold overflow-y-hidden ' >Welcome to </p>
+          <motion.p 
           initial={{opacity:0, scale:0.6}}
           animate={{opacity:1, scale:1}}
           transition={{
@@ -34,7 +34,7 @@ function App({ scale = Array.from({ length: 50 }, () => 0.5 + Math.random() * 4)
               restDelta: 0.001
             }
           }}
-          className=' font-sixtyfour uppercase text-5xl text-lightorange ' >chevloret</motion.span>
+          className=' font-sixtyfour uppercase md:text-5xl text-4xl  text-lightorange ' >chevloret</motion.p>
           <p className='text-slate-300 font-orbitron  opacity-70 ' >The Dream Car of every enthusiast. You got a racer in you!! then we got you covered. </p>
           <p className='text-slate-300 font-orbitron w-[90%] opacity-70 space-x-2' >
           <TypeAnimation
