@@ -6,7 +6,7 @@ import { Canvas } from '@react-three/fiber'
 
 
 const Car = () => {
-  const car = useGLTF('../../public/car.gltf')
+  const car = useGLTF('car.gltf')
   return (
     <primitive
         object={car.scene}
