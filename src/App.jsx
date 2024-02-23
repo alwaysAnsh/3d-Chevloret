@@ -67,7 +67,7 @@ function App({ scale = Array.from({ length: 50 }, () => 0.5 + Math.random() * 4)
           {/* <button className='border-2 border-white text-white' >Deal</button> */}
         </div>
 
-        <div className='md:w-full relative z-0  h-full ' >
+        <div className='md:w-full relative z-0  md:h-full h-screen w-full md:overflow-x-hidden overflow-x-scroll  ' >
           <CarCanvas/>
         </div>
       </div>
